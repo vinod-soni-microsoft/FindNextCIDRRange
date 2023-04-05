@@ -21,7 +21,8 @@ name: Deploy DotNet project to Azure Function App
 on:
   push:
     branches:
-    - ["main"]
+      - main
+  workflow_dispatch:
 
 env:
   AZURE_FUNCTIONAPP_NAME: 'findnextcidrrange04052023'   # set this to your function app name on Azure
