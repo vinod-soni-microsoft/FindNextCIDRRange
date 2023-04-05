@@ -61,8 +61,7 @@ namespace FindNextCIDR
         static HttpStatusCode httpStatusCode = HttpStatusCode.OK;
 
         [FunctionName("GetCidr")]
-        public static async Task<IActionResult> Run(
-            [HttpTrigger("get", "post", Route = null)] HttpRequest req,
+        public static async Task<IActionResult> Run(HttpRequest req,
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
