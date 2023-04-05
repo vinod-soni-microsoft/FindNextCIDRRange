@@ -1,8 +1,7 @@
 name: Build and deploy .NET Core application to Function App findnextcidrrange04052023
 on:
-  push:
-    branches:
-    - main
+  workflow_dispatch:
+  
 env:
   AZURE_FUNCTIONAPP_NAME: findnextcidrrange04052023
   AZURE_FUNCTIONAPP_PACKAGE_PATH: src\Find-NextCidrRange\published
